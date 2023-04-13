@@ -1,4 +1,4 @@
-LEMBRECE DE EXCUTAR SEMPRE O ' npm i ', logo apos o 'npm run dev' para ai sim executar os comandos de teste
+LEMBRECE DE EXCUTAR SEMPRE O ' npm i ', apo ele execute o 'npm run dev' para ai sim executar os comandos de teste
 
 Oque é essa API? é uma api rest criada em nodejs. com intuito de ser aplicada em um app de dietas. nela temos os seguintes frameworks utilizando como linguagem o TypeScript.
 - ZOD
