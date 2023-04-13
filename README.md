@@ -1,3 +1,12 @@
+oque é essa API? é uma api rest criada em nodejs. com intuito de ser aplicada em um app de dietas. nela temos os seguintes frameworks utilizando como linguagem o TypeScript.
+- ZOD
+- VITEST
+- KNEX
+- FASTIFY
+- DOTENV
+- ESLINT
+
+/AQUI ESTA A REGRA DE NEGOCIO DA API /
 - [x] Deve ser possível criar um usuário
 - [x] Deve ser possível identificar o usuário entre as requisições
 - [x] Deve ser possível registrar uma refeição feita, com as seguintes informações:
