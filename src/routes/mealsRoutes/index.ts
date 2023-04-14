@@ -32,15 +32,19 @@ export async function mealsRoutes(app: FastifyInstance) {
       })
 
       if (type === 'diet') {
-        await knex('Users').where('session_id', sessionId).update({
-          diet_meals: +1,
-          total_meals: +1,
-        })
+        await knex('Users')
+          .where('session_id', sessionId)
+          .update({
+            diet_meals: knex.raw('?? + 1', ['diet_meals']),
+            total_meals: knex.raw('?? + 1', ['total_meals']),
+          })
       } else {
-        await knex('Users').where('session_id', sessionId).update({
-          noDiet_meals: +1,
-          total_meals: +1,
-        })
+        await knex('Users')
+          .where('session_id', sessionId)
+          .update({
+            noDiet_meals: knex.raw('?? + 1', ['noDiet_meals']),
+            total_meals: knex.raw('?? + 1', ['total_meals']),
+          })
       }
 
       return reply.status(201).send()
