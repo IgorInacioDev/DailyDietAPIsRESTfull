@@ -1,5 +1,6 @@
 node_modules
-bancdo.db
+banco.db
 teste.db
 .eslintignore
 .eslintrc.json
+build
