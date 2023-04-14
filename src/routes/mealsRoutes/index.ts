@@ -85,9 +85,13 @@ export async function mealsRoutes(app: FastifyInstance) {
     async (request) => {
       const sessionId = request.cookies.sessionId
 
+<<<<<<< HEAD
       const meals = await knex('Meals')
         .where('session_id', sessionId)
         .select('*')
+=======
+      const meals = await knex('Meals').where('session_id', sessionId).select('*')
+>>>>>>> 51c67e3f726bc36e2205e323d23ee7d8067f5867
 
       return meals
     },
